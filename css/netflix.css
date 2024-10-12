@@ -1,0 +1,191 @@
+body{
+    background-color: black;
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid red; */
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.4;
+    background-color: black;
+    position: relative;
+}
+.logo img{
+    height: 45px;
+    width: 142px;
+}
+#heading{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    margin-top: 150px;
+}
+.seperation{
+    /* display: flex; */
+    height: 100px;
+    width: 100%;
+    border-top: 5px solid #FF416C;
+    border-radius: 100% / 100px;
+    background: linear-gradient(0deg,black 75%, #0e04bb 100%);
+    transform: translateY(-50%);
+    /* opacity: 0.4; */
+}
+#heading h1{
+    /* font-family: "Martel Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+     */
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+}
+#heading p{
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: -50px;
+    font-size:20px ;
+}
+#search{
+    display: flex;
+    justify-content: center;
+}
+#search input{
+    background-color: rgba(22, 22, 22, 0.7);
+    /* color: white; */
+    /* height: 4rem; */
+    padding: 10px;
+    width: 25rem;
+}
+#search input::placeholder{
+    color: white;
+}
+/* #search div{
+    height: 10rem;
+    width: 27rem;
+} */
+.searchbtn {
+    height: 56px;
+    width: 176px;
+    background-color: red;
+}
+.signinbtn{
+    background-color: red;
+}
+
+.section2 img{
+    border-radius: 10px;
+}
+.section3 div{
+    background: linear-gradient(#141414,#470057);
+    border-radius: 10px;
+}
+.section3 h3{
+    color: white;
+}
+.section3 .containerdiv{
+    height: 350px;
+    width: 272px;
+    margin: 0px auto;
+}
+#searchbottom input{
+    width: 35rem ;
+    background-color: rgba(22, 22, 22, 0.7);
+}
+#searchbottom input::placeholder{
+    color: white;
+}
+footer a {
+    color: #FFFFFFB3;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+hr{
+    height: 30px;
+    width: 30px;
+}
+.section2 img:hover{
+    animation : hoveranimation 1s ease 1;
+}
+@keyframes hoveranimation{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+.section2 img:hover{
+    transform: scale(1.1);
+    /* border-radius: 30px; */
+}
+.img-fluid{
+    flex-wrap: nowrap;
+}
+#prevBtn{
+    background-color: transparent;
+    color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    box-shadow: 0px 0px 10px white;
+    margin-top: 6rem;
+    margin-right: 1rem;
+    /* margin-left: -10px; */
+}
+#nextBtn{
+    background-color: transparent;
+    color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    box-shadow: 0px 0px 10px white;
+    margin-top: 6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#underline1{
+    /* height: 2px;
+    width: 180px;
+    border: 2px solid white;
+    margin-top: -10px;
+    margin-bottom: 10px; */
+    max-width: 180px;
+    animation: underlineanimation 3s ease-in-out 3s infinite normal;
+}
+#underline2{
+    max-width: 270px;
+    animation: underlineanimation 3s ease-in-out 0s infinite normal;
+}
+#underline3{
+    max-width: 360px;
+    animation: underlineanimation 3s ease-in-out 0s infinite normal;
+}
+@keyframes underlineanimation{
+    from{
+        border: 2px solid white;
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+    to{
+        height: 2px;
+        width: 800px;
+        border: 2px solid rgb(248, 10, 173);
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+}
+.accordion-item{
+    border-bottom: none;
+}
